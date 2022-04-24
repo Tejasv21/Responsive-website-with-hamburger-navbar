@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Space+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --dark: #26282c;
+  --darkOpLow: #26282c93;
+  --light: #f7f7f7;
+  --lightOpLow: #f7f7f74b;
+  --font1: 'Open Sans', sans-serif;
+  --font2: 'Space Mono', sans-serif;
+}
+
+body {
+  background-image: url("../img/background.jfif");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 71px;
+  background-color: var(--darkOpLow);
+  top: 0;
+  position: sticky;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25vw;
+  transition: 0.5s ease-in;
+  padding: 0 5px;
+  height: 55px;
+  text-decoration: none;
+}
+
+nav .logo:hover{
+  background-color: var(--lightOpLow);
+}
+
+nav .logo img {
+  width: 70px;
+}
+
+nav .logo span {
+  color: var(--light);
+  margin: 5px;
+  font-family: var(--font2);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--light);
+  padding: 15px;
+  transition: 0.5s ease-in;
+  font-family: var(--font1);
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: var(--lightOpLow);
+}
+
+#Home {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeContainer {
+  background-color: var(--darkOpLow);
+  width: 60vw;
+  color: var(--light);
+  padding: 20px 30px;
+}
+
+.homeContainer h1 {
+  font-family: var(--font2);
+  font-size: 40px;
+}
+
+.homeContainer p {
+  font-family: var(--font1);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.homeContainer p span {
+  font-weight: 600;
+  font-family: var(--font2);
+}
+
+.homeContainer .btns {
+  margin-bottom: 10px;
+}
+
+.homeContainer .btns a {
+  text-decoration: none;
+  color: var(--light);
+  padding: 10px;
+  transition: 0.5s ease-in;
+  font-family: var(--font1);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.homeContainer .btns a:hover {
+  background-color: var(--lightOpLow);
+}
+
+#About {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+}
+
+.aboutContainer {
+  width: 60vw;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentLeft {
+  width: 60%;
+}
+
+.imgRight {
+  width: 40%;
+}
+
+.aboutContainer h1 {
+  font-family: var(--font2);
+  font-size: 40px;
+}
+
+.aboutContainer p {
+  font-family: var(--font1);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutContainer span {
+  font-family: var(--font2);
+  font-weight: 600;
+}
+
+.aboutContainer img {
+  width: 100%;
+}
+
+#Courses {
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coursesContainer {
+  background-color: var(--darkOpLow);
+  width: 60vw;
+  color: var(--light);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.coursesContainer h1 {
+  font-family: var(--font2);
+  font-size: 40px;
+  grid-column: 1 / span 3;
+}
+
+.courseCard {
+  background-color: var(--lightOpLow);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.courseCard img {
+  width: 100px;
+}
+
+.courseCard h2 {
+  font-family: var(--font2);
+  font-size: 30px;
+}
+
+.courseCard a {
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.5s ease-in;
+  font-family: var(--font1);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.courseCard a:hover {
+  background-color: var(--lightOpLow);
+}
+
+#Contact {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+}
+
+.contactContainer {
+  width: 60vw;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactContainer h1 {
+  font-family: var(--font2);
+  font-size: 40px;
+  text-align: left;
+}
+
+.contactForm {
+  background-color: var(--lightOpLow);
+  width: 100%;
+  padding: 30px;
+}
+
+.contactForm input, .contactForm textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  outline: 0;
+  font-family: var(--font1);
+  background-color: var(--light);
+  color: var(--dark);
+  resize: vertical;
+}
+
+.contactForm input[type="submit"] {
+  width: auto;
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkOpLow);
+}
+
+footer p {
+  color: var(--light);
+  font-family: var(--font1);
+  font-size: 18px;
+}
+
+footer p span {
+  font-family: var(--font2);
+  font-weight: 600;
+}
